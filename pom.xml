@@ -6,7 +6,11 @@
 
   <groupId>com.christian</groupId>
   <artifactId>christianservices</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <name>christianservices</name>
   <url>http://www.christianservices.com</url>
@@ -44,7 +48,7 @@
       <version>2.5.7</version>
     </dependency>
   </dependencies>
-<!--  dependencies are so that each sub project has theese dependencies without having to adjust a sub project's pom.xml file-->
+<!--  dependencies are so that each sub module has these dependencies without having to adjust a sub modules's pom.xml file-->
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

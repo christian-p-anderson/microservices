@@ -11,3 +11,6 @@ public class Customer {
     private String lastName;
     private String email;
 }
+
+// this is the Customer model
+// with lombok @Data creates the getters and setters and the string() method override

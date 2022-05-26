@@ -8,6 +8,6 @@ public record CustomerRegistrationRequest(
 }
 
 /*
-this is the model that will be used to create a customer object that will be used as a body for a POST call
+this is what will be used to create a customer object that will be used as a body for a POST call
 see Customer Controller
  */

@@ -4,3 +4,17 @@ server:
 spring:
   application:
     name: fraud
+  datasource:
+    username: 'christian_svcs'
+    url: jdbc:postgresql://localhost:5432/fraud
+#    setup the database inside of another database to save resources
+#    if we had a separate database for fraud the url would be different
+    password: 'password'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
